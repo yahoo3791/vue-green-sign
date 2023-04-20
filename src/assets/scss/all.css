@@ -10960,4 +10960,8 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.main {
+  height: 400px;
+  width: 350px;
 }/*# sourceMappingURL=all.css.map */
