@@ -142,6 +142,10 @@ table {
   border-spacing: 0;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -10964,4 +10968,11 @@ textarea.form-control-lg {
 .main {
   height: 400px;
   width: 350px;
+}
+
+.signBtn {
+  background: #198754;
+  height: 100%;
+  color: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }/*# sourceMappingURL=all.css.map */
