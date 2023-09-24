@@ -1,0 +1,18 @@
+.history {
+    text-decoration: none;
+    color: #1C8B6A;
+    background: #fff;
+    border: 2px solid #1C8B6A;
+    border-radius: 16px;
+    padding: 10px 30px;
+    margin-right: 5%;
+    z-index: 2;
+    @media (max-width:768px) {
+        margin-right: 0;
+    }
+    &:hover {
+        color: #fff;
+        background-color: #1C8B6A;
+        transition: all .3s;
+    }
+}

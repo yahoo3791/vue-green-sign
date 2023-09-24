@@ -1,4 +1,91 @@
 .main {
-  height: 400px;
-  width: 350px;
+	height: 80vh;
+	width: 100%;
+}
+.main-bg {
+	background-color: #f0f0f094;
+	width: 90%;
+	border-radius: 20px;
+}
+.upload-bg {
+	padding: 10% 2%;
+	background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%23B7B7B7FF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='29' stroke-linecap='round'/%3e%3c/svg%3e");
+	border-radius: 12px;
+	background-size: 99.9% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: -25%;
+		left: -47%;
+		width: 620px;
+		height: 380px;
+		background: center / contain no-repeat url('@/assets/pic/uploadarea.png');
+		@media (max-width: 768px) {
+			bottom: -59%;
+			left: -58%;
+		}
+	}
+	@media (max-width: 768px) {
+		margin-top: 15px;
+		padding: 10% 0;
+		background-size: 90% 100%;
+		background-position: 50%;
+	}
+}
+.content {
+	color: #424242;
+	font-size: 1.1rem;
+	font-weight: 400;
+}
+.main-spacing {
+	margin-left: 5rem;
+	margin-right: 10rem;
+	@media (max-width: 768px) {
+		margin: 0;
+		padding: 2rem 0;
+	}
+}
+.leaf-left {
+	background: url('@/assets/pic/leafleft.png') no-repeat;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+.leaf-right {
+	background: url('@/assets/pic/leafright.png') no-repeat;
+	width: 120px;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+.color-block {
+	background: url('@/assets/pic/colorblock.png') no-repeat;
+	width: 300px;
+	height: 100px;
+	position: absolute;
+	bottom: 7%;
+	left: 0;
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+.upload-btn {
+    transition: all .3s;
+    z-index: 10;
+  &:hover {
+    transition: all .3s;
+    transform: scale(1.1);
+  }
 }
